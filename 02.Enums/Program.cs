@@ -1,6 +1,6 @@
 ﻿namespace _02.Enums;
 
-class Program
+public class Program
 {
     public static void Main()
     {
