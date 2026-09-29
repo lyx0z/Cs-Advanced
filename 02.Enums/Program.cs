@@ -9,7 +9,7 @@ public enum Gender
     Unknown,
 }
 
-class Program
+public class Program
 {
     public static void Main()
     {
