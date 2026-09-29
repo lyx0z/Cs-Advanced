@@ -1,6 +1,4 @@
-﻿using System.Globalization;
-
-namespace _02.Enums;
+﻿namespace _02.Enums;
 
 public enum Gender
 {
@@ -13,36 +11,27 @@ public class Program
 {
     public static void Main()
     {
-        Person.GetGreeting(new Person("Nikita", 17, Gender.Male));
+        var nameAndGender = Person.GetGreeting(new Person("Nikita", 17, Gender.Male));
+        Console.WriteLine($"Hallo {nameAndGender.Item2} {nameAndGender.Item1}");
     }
 }
 
-internal class Person
+internal class Person(string name, int age, Gender gender)
 {
-    public Person(string name, int age, Gender gender)
-    {
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
-    }
+    private string name = name;
+    private readonly int age = age;
+    private readonly Gender gender = gender;
 
-    private string name;
-    private readonly int age;
-    private readonly Gender gender;
-
-    public static void GetGreeting(Person activeUser)
+    public static (string, string) GetGreeting(Person activeUser)
     {
         switch (activeUser.gender)
         {
             case Gender.Female:
-                Console.WriteLine($"Hallo Frau {activeUser.name}");
-                break;
+                return (activeUser.name, "Frau");
             case Gender.Male:
-                Console.WriteLine($"Hallo Herr {activeUser.name}");
-                break;
+                return (activeUser.name, "Herr");
             default:
-                Console.WriteLine($"Hallo Herr*Frau {activeUser.name}");
-                break;
+                return (activeUser.name, "Herr*Frau");
         }
     }
 }
