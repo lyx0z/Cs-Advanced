@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="01.Collections/01.Collections.csproj" />
+  <Project Path="02.Enums/02.Enums.csproj" />
 </Solution>
