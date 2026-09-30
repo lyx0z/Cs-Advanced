@@ -1,0 +1,13 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9610937d_002Dbfcb_002D4d1d_002Dadec_002D1ef1ad379e2b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.UnitTest1.IsDeadlinePastDue_DueTime_SmallerThenToday&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a07e90d5_002Dfdd9_002D4630_002D9f0b_002Df706a10fc5a9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="UnitTest1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.ConvertCetToUtc_UnitTest.Convert_CetTimeToUtcTime_FirstDate&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.IsDeadLinePastDue_UnitTest.isDeadlinePastDue_DueTime_SameAsToday&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.ConvertCetToUtc_UnitTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
