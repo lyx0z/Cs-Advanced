@@ -6,7 +6,6 @@ public class Program
     {
         var invoice = new Invoice();
         var cetTime = new DateTime(2021, 10, 20, 10, 50, 20);
-        invoice.IsDeadLinePastDue();
         Console.WriteLine(invoice.IsDeadLinePastDue() ? "past deadline" : "not past deadline");
 
         var birthday = new DateTime(2009, 09, 18);
@@ -35,8 +34,8 @@ public static class Birthdate
 {
     public static void DaysSinceBirthday(DateTime birthday)
     {
-        var daysSince = DateTime.Today - birthday;
-        Console.WriteLine(daysSince);
+        var dayCounter = DateTime.Today - birthday;
+        Console.WriteLine(dayCounter.ToString("%d"));
     }
 }
 
