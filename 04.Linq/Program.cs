@@ -4,10 +4,10 @@ public class Program
 {
     public static void Main()
     {
-        List<int> numList = Enumerable.Range(1, 20).ToList();
+        var numList = Enumerable.Range(1, 20).ToList();
 
         //Selektiere aus einer Liste mit allen Zahlen von 1 - 20 nur diese, welche durch drei teilbar sind
-        var result = numList.Where(x => x % 3 == 0);
+        var result = numList.Where(x => x % 3 == 0).ToList();
         foreach (var number in result)
         {
             Console.WriteLine(number);
@@ -20,7 +20,7 @@ public class Program
         //Erstelle eine Liste mit mindestens fünf Personen (Name und Geschlecht).
         //Wähle mit Linq alle männlichen Personen aus und sortiere diese nach Namen.
 
-        var people = new List<Person>()
+        var people = new List<Person>
         {
             new("Max", Gender.Male),
             new("David", Gender.Male),
