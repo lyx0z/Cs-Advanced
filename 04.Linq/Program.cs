@@ -4,29 +4,7 @@ public class Program
 {
     public static void Main()
     {
-        var numList = new List<int>()
-        {
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15,
-            16,
-            17,
-            18,
-            19,
-            20,
-        };
+        List<int> numList = Enumerable.Range(1, 20).ToList();
 
         //Selektiere aus einer Liste mit allen Zahlen von 1 - 20 nur diese, welche durch drei teilbar sind
         var result = numList.Where(x => x % 3 == 0);
@@ -44,12 +22,12 @@ public class Program
 
         var people = new List<Person>()
         {
-            new Person("Max", Gender.Male),
-            new Person("David", Gender.Male),
-            new Person("Johnny", Gender.Male),
-            new Person("Kate", Gender.Female),
-            new Person("Rebecca", Gender.Female),
-            new Person("Lucy", Gender.Female)
+            new("Max", Gender.Male),
+            new("David", Gender.Male),
+            new("Johnny", Gender.Male),
+            new("Kate", Gender.Female),
+            new("Rebecca", Gender.Female),
+            new("Lucy", Gender.Female)
         };
 
         var onlyMale = people

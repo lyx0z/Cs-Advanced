@@ -8,9 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2602af55-53f2-4d40-a7cf-1b91d94703e2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cs.Advanced/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cs.Advanced/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/04.Linq/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/04.Linq/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cs.Advanced.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Cs.Advanced.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
