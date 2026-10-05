@@ -1,19 +1,17 @@
-﻿using System.Runtime.InteropServices.JavaScript;
-
-namespace _03.DateTimeAndTimeSpan;
+﻿namespace _03.DateTimeAndTimeSpan;
 
 public class Program
 {
     public static void Main()
     {
+        var invoice = new Invoice();
         var cetTime = new DateTime(2021, 10, 20, 10, 50, 20);
-        var dueTime = new DateTime(2026, 10, 20);
-        Invoice.IsDeadLinePastDue(dueTime);
-        Console.WriteLine(
-            Invoice.IsDeadLinePastDue(dueTime) ? "past deadline" : "not past deadline"
-        );
+        invoice.IsDeadLinePastDue();
+        Console.WriteLine(invoice.IsDeadLinePastDue() ? "past deadline" : "not past deadline");
 
-        Birthdate.DaysSinceBirthday();
+        var birthday = new DateTime(2009, 09, 18);
+        Birthdate.DaysSinceBirthday(birthday);
+
         var utcTime = TimezoneConvert.ConvertCetToUtc(cetTime);
         Console.WriteLine(utcTime);
     }
@@ -24,20 +22,19 @@ public class Invoice
 {
     public string debtor = "notNikita";
     public int debt = 62848;
-    public DateTime dueTime;
+    public DateTime dueDate;
 
-    public static bool IsDeadLinePastDue(DateTime dueTime)
+    public bool IsDeadLinePastDue()
     {
-        return DateTime.Today > dueTime;
+        return DateTime.Today > dueDate;
     }
 }
 
 //Schreibe eine Methode, wo du für ein bestimmtes Datum herausfinden kannst, wie viele Tage seither vergangen sind. Wie alt bist du in Tagen?
 public static class Birthdate
 {
-    public static void DaysSinceBirthday()
+    public static void DaysSinceBirthday(DateTime birthday)
     {
-        var birthday = new DateTime(2009, 09, 18);
         var daysSince = DateTime.Today - birthday;
         Console.WriteLine(daysSince);
     }
@@ -46,16 +43,9 @@ public static class Birthdate
 //Schreibe eine Methode, die eine bestimmte Uhrzeit von 2021 von CET (CET ) nach UTC (Koordinierte Weltzeit ) umwandelt. Beachte dabei den Unterschied von Winter- und Sommerzeit!
 public static class TimezoneConvert
 {
-    static TimeSpan cetOffset = TimeSpan.FromHours(1);
-    static TimeZoneInfo cetTimeZone = TimeZoneInfo.CreateCustomTimeZone(
-        "CET",
-        cetOffset,
-        "Central European Time (CET)",
-        "CET"
-    );
-
     public static DateTime ConvertCetToUtc(DateTime time)
     {
-        return TimeZoneInfo.ConvertTimeToUtc(time, cetTimeZone);
+        var cet = TimeZoneInfo.FindSystemTimeZoneById("Central European Standard Time");
+        return TimeZoneInfo.ConvertTimeToUtc(time, cet);
     }
 }

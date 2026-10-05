@@ -5,35 +5,41 @@ using _03.DateTimeAndTimeSpan;
 public class IsDeadLinePastDue_UnitTest
 {
     [Fact]
-    public void IsDeadlinePastDue_DueTime_SmallerThenToday()
+    public void IsDeadlinePastDue_DueDateBeforeToday_ReturnsTrue()
     {
         // Arrange
-        var dueTime = new DateTime(2026, 8, 10);
+        var invoice = new Invoice { dueDate = DateTime.Today.AddDays(-10) };
+
         // Act
-        var result = Invoice.IsDeadLinePastDue(dueTime);
+        var result = invoice.IsDeadLinePastDue();
+
         // Assert
         Assert.True(result);
     }
 
     [Fact]
-    public void isDeadlinePastDue_DueTime_BiggerThenToday()
+    public void IsDeadlinePastDue_DueDateAfterToday_ReturnsFalse()
     {
-        // Arrange
-        var dueTime = new DateTime(2026, 10, 28);
-        // Act
-        var result = Invoice.IsDeadLinePastDue(dueTime);
-        // Assert
+        //Arrange
+        var invoice = new Invoice { dueDate = DateTime.Today.AddDays(10) };
+
+        //Act
+        var result = invoice.IsDeadLinePastDue();
+
+        //Assert
         Assert.False(result);
     }
 
     [Fact]
-    public void isDeadlinePastDue_DueTime_SameAsToday()
+    public void IsDeadlinePastDue_DueDateIsToday_ReturnsFalse()
     {
-        // Arrange
-        var dueTime = DateTime.Today;
-        // Act
-        var result = Invoice.IsDeadLinePastDue(dueTime);
-        // Assert
+        //Arrange
+        var invoice = new Invoice { dueDate = DateTime.Today };
+
+        //Act
+        var result = invoice.IsDeadLinePastDue();
+
+        //Assert
         Assert.False(result);
     }
 }
