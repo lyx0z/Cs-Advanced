@@ -9,10 +9,10 @@ public class Bike(
     string licensePlate,
     int tankVolume,
     int tankContent,
-    int leanAngle)
-    : Vehicle(speed, gear, indicatorState, owner, yearBuilt, licensePlate, tankVolume, tankContent)
+    int leanAngle
+) : Vehicle(speed, gear, indicatorState, owner, yearBuilt, licensePlate, tankVolume, tankContent)
 {
-    private int LeanAngle = leanAngle;
+    public int LeanAngle = leanAngle;
 
     public override void Accelerate()
     {
@@ -21,12 +21,26 @@ public class Bike(
 
     public override void Brake()
     {
-        Speed -= 6;
+        if (Speed > 0)
+        {
+            Speed -= 6;
+        }
+        else
+        {
+            Speed = 0;
+        }
     }
 
     public void Left()
     {
-        LeanAngle -= 2;
+        if (LeanAngle > 0)
+        {
+            LeanAngle -= 2;
+        }
+        else
+        {
+            LeanAngle = 0;
+        }
     }
 
     public void Right()
@@ -41,8 +55,8 @@ public class Bike(
 
     public override string ToString()
     {
-        return $"Type:{nameof(Bike)}, Speed:{Speed}, Gear:{Gear}, Indicator:{IndicatorState}, Owner:{Owner}, " +
-               $"Production Year:{YearBuilt}, License Plate:{LicensePlate}, Fuel Capacity:{TankVolume}, " +
-               $"Fuel Level:{TankContent} Lean Angle:{LeanAngle}";
+        return $"Type:{nameof(Bike)}, Speed:{Speed}, Gear:{Gear}, Indicator:{IndicatorState}, Owner:{Owner}, "
+            + $"Production Year:{YearBuilt}, License Plate:{LicensePlate}, Fuel Capacity:{TankVolume}, "
+            + $"Fuel Level:{TankContent} Lean Angle:{LeanAngle}";
     }
 }

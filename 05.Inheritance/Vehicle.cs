@@ -4,7 +4,7 @@ public enum IndicatorState
 {
     Left,
     Right,
-    Neutral
+    Neutral,
 }
 
 public class Vehicle
@@ -18,8 +18,16 @@ public class Vehicle
     public int TankVolume;
     public int TankContent;
 
-    public Vehicle(int speed, int gear, IndicatorState indicatorState, string owner,
-        int yearBuilt, string licensePlate, int tankVolume, int tankContent)
+    public Vehicle(
+        int speed,
+        int gear,
+        IndicatorState indicatorState,
+        string owner,
+        int yearBuilt,
+        string licensePlate,
+        int tankVolume,
+        int tankContent
+    )
     {
         Speed = speed;
         Gear = gear;
@@ -42,6 +50,10 @@ public class Vehicle
         {
             Speed--;
         }
+        else
+        {
+            Speed = 0;
+        }
     }
 
     public void ShiftGear(int gear)
@@ -62,5 +74,12 @@ public class Vehicle
     public virtual string GetTypeName()
     {
         return "Vehicle";
+    }
+
+    public override string ToString()
+    {
+        return $"Type:{nameof(Vehicle)}, Speed:{Speed}, Gear:{Gear}, Indicator:{IndicatorState}, Owner:{Owner}, "
+            + $"Production Year:{YearBuilt}, License Plate:{LicensePlate}, Fuel Capacity:{TankVolume}, "
+            + $"Fuel Level:{TankContent}";
     }
 }

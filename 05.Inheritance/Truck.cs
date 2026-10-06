@@ -9,8 +9,8 @@ public class Truck(
     string licensePlate,
     int tankVolume,
     int tankContent,
-    int cargoWeight)
-    : Vehicle(speed, gear, indicatorState, owner, yearBuilt, licensePlate, tankVolume, tankContent)
+    int cargoWeight
+) : Vehicle(speed, gear, indicatorState, owner, yearBuilt, licensePlate, tankVolume, tankContent)
 {
     public int CargoWeight = cargoWeight;
 
@@ -21,7 +21,14 @@ public class Truck(
 
     public override void Brake()
     {
-        Speed -= 2;
+        if (Speed > 0)
+        {
+            Speed -= 6;
+        }
+        else
+        {
+            Speed = 0;
+        }
     }
 
     public void Load(int weight)
@@ -31,7 +38,14 @@ public class Truck(
 
     public void Unload(int weight)
     {
-        CargoWeight -= weight;
+        if (CargoWeight > 0)
+        {
+            CargoWeight -= weight;
+        }
+        else
+        {
+            CargoWeight = 0;
+        }
     }
 
     public override string GetTypeName()
@@ -41,8 +55,8 @@ public class Truck(
 
     public override string ToString()
     {
-        return $"Type:{nameof(Car)}, Speed:{Speed}, Gear:{Gear}, Indicator:{IndicatorState}, Owner:{Owner}, " +
-               $"Production Year:{YearBuilt}, License Plate:{LicensePlate}, Fuel Capacity:{TankVolume}, " +
-               $"Fuel Level:{TankContent} Cargo Weight:{CargoWeight}";
+        return $"Type:{nameof(Car)}, Speed:{Speed}, Gear:{Gear}, Indicator:{IndicatorState}, Owner:{Owner}, "
+            + $"Production Year:{YearBuilt}, License Plate:{LicensePlate}, Fuel Capacity:{TankVolume}, "
+            + $"Fuel Level:{TankContent} Cargo Weight:{CargoWeight}";
     }
 }

@@ -10,8 +10,8 @@ public class Car(
     int tankVolume,
     int tankContent,
     int seatCount,
-    int occupants)
-    : Vehicle(speed, gear, indicatorState, owner, yearBuilt, licensePlate, tankVolume, tankContent)
+    int occupants
+) : Vehicle(speed, gear, indicatorState, owner, yearBuilt, licensePlate, tankVolume, tankContent)
 {
     public int SeatCount = seatCount;
     public int Occupants = occupants;
@@ -23,7 +23,14 @@ public class Car(
 
     public override void Brake()
     {
-        Speed -= 2;
+        if (Speed > 0)
+        {
+            Speed -= 2;
+        }
+        else
+        {
+            Speed = 0;
+        }
     }
 
     public void Board()
@@ -43,8 +50,8 @@ public class Car(
 
     public override string ToString()
     {
-        return $"Type:{nameof(Car)}, Speed:{Speed}, Gear:{Gear}, Indicator:{IndicatorState}, Owner:{Owner}, " +
-               $"Production Year:{YearBuilt}, License Plate:{LicensePlate}, Fuel Capacity:{TankVolume}, " +
-               $"Fuel Level:{TankContent} Seat Count:{SeatCount}, Occupants:{Occupants}";
+        return $"Type:{nameof(Car)}, Speed:{Speed}, Gear:{Gear}, Indicator:{IndicatorState}, Owner:{Owner}, "
+            + $"Production Year:{YearBuilt}, License Plate:{LicensePlate}, Fuel Capacity:{TankVolume}, "
+            + $"Fuel Level:{TankContent} Seat Count:{SeatCount}, Occupants:{Occupants}";
     }
 }
