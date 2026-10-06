@@ -4,17 +4,6 @@ public static class Program
 {
     public static void Main()
     {
-        var vehicle = new Vehicle(
-            speed: 5,
-            gear: 2,
-            indicatorState: IndicatorState.Neutral,
-            owner: "Pius",
-            yearBuilt: 2010,
-            licensePlate: "LZ1023",
-            tankVolume: 40,
-            tankContent: 20
-        );
-
         var bike = new Bike(
             speed: 10,
             gear: 1,
@@ -59,9 +48,7 @@ public static class Program
         var bikeContents = bike.ToString();
         var carContents = car.ToString();
         var truckContents = truck.ToString();
-        var vehicleContents = vehicle.ToString();
 
-        Console.WriteLine(vehicleContents);
         Console.WriteLine(bikeContents);
         Console.WriteLine(carContents);
         Console.WriteLine(truckContents);

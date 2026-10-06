@@ -7,7 +7,7 @@ public enum IndicatorState
     Neutral,
 }
 
-public class Vehicle
+public abstract class Vehicle
 {
     public int Speed;
     public int Gear;
