@@ -5,6 +5,7 @@
     <projectFile>02.Enums/02.Enums.csproj</projectFile>
     <projectFile>03.DateTimeAndTimeSpan/03.DateTimeAndTimeSpan.csproj</projectFile>
     <projectFile>04.Linq/04.Linq.csproj</projectFile>
+    <projectFile>05.Inheritance/05.Inheritance.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2602af55-53f2-4d40-a7cf-1b91d94703e2" name="Changes" comment="">
