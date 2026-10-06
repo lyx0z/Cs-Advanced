@@ -2,5 +2,6 @@
   <Project Path="01.Collections/01.Collections.csproj" />
   <Project Path="02.Enums/02.Enums.csproj" />
   <Project Path="03.DateTimeAndTimeSpan/03.DateTimeAndTimeSpan.csproj" />
+  <Project Path="05.Inheritance/05.Inheritance.csproj" />
   <Project Path="Cs.Advanced.UnitTests/Cs.Advanced.UnitTests.csproj" />
 </Solution>
