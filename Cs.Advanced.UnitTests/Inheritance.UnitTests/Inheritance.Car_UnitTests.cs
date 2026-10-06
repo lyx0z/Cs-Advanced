@@ -55,10 +55,9 @@ public class inheritace_Car_UnitTests
     }
 
     [Fact]
-    public void Car_CheckBrakeMethod_CanGoBelowZero()
+    public void Car_CheckBrakeMethod_CantGoBelowZero()
     {
         // Arrange
-        // Hinweis: Im Gegensatz zu Vehicle.Brake() clampt Car.Brake() nicht bei 0.
         var car = new Car(
             speed: 1,
             gear: 2,
