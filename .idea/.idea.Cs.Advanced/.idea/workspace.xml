@@ -7,6 +7,7 @@
     <projectFile>04.Linq/04.Linq.csproj</projectFile>
     <projectFile>05.Inheritance/05.Inheritance.csproj</projectFile>
     <projectFile>06.Interfaces/06.Interfaces.csproj</projectFile>
+    <projectFile>07.ValueVsReferenceTypes/07.ValueVsReferenceTypes.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
@@ -18,12 +19,18 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2602af55-53f2-4d40-a7cf-1b91d94703e2" name="Changes" comment="" />
-    <list default="true" id="2602af55-53f2-4d40-a7cf-1b91d94703e2" name="Changes" comment="">
+    <list default="true" id="b675a865-ee1d-47b4-8171-951616f3f808" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.ai/mcp/mcp.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06.Interfaces/06.Interfaces.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06.Interfaces/FancyConsoleWriter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06.Interfaces/FileTextWriter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06.Interfaces/ITextWriter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06.Interfaces/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06.Interfaces/RandomTextWriter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06.Interfaces/SimpleConsoleWriter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cs.Advanced/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cs.Advanced/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.Inheritance/Car.cs" beforeDir="false" afterPath="$PROJECT_DIR$/05.Inheritance/Car.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cs.Advanced.UnitTests/Inheritance.UnitTests/Inheritance.Car_UnitTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cs.Advanced.UnitTests/Inheritance.UnitTests/Inheritance.Car_UnitTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cs.Advanced.UnitTests/Inheritance.UnitTests/Inheritance.Motorcycle_UnitTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cs.Advanced.UnitTests/Inheritance.UnitTests/Inheritance.Motorcycle_UnitTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cs.Advanced.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Cs.Advanced.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cs.Advanced.slnx" beforeDir="false" afterPath="$PROJECT_DIR$/Cs.Advanced.slnx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,55 +130,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.01.Collections.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.03.DateTimeAndTimeSpan.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.04.Linq.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.06.Interfaces.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;06/Interfaces&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.qodana&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
-  &lt;component name=&quot;PropertiesComponent&quot;&gt;{
-  &amp;quot;keyToString&amp;quot;: {
-    &amp;quot;.NET Project.01.Collections.executor&amp;quot;: &amp;quot;Run&amp;quot;,
-    &amp;quot;.NET Project.03.DateTimeAndTimeSpan.executor&amp;quot;: &amp;quot;Run&amp;quot;,
-    &amp;quot;.NET Project.04.Linq.executor&amp;quot;: &amp;quot;Run&amp;quot;,
-    &amp;quot;.NET Project.06.Interfaces.executor&amp;quot;: &amp;quot;Run&amp;quot;,
-    &amp;quot;ModuleVcsDetector.initialDetectionPerformed&amp;quot;: &amp;quot;true&amp;quot;,
-    &amp;quot;RunOnceActivity.MCP Project settings loaded&amp;quot;: &amp;quot;true&amp;quot;,
-    &amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;quot;: &amp;quot;true&amp;quot;,
-    &amp;quot;RunOnceActivity.cidr.known.project.marker&amp;quot;: &amp;quot;true&amp;quot;,
-    &amp;quot;RunOnceActivity.git.unshallow&amp;quot;: &amp;quot;true&amp;quot;,
-    &amp;quot;RunOnceActivity.readMode.enableVisualFormatting&amp;quot;: &amp;quot;true&amp;quot;,
-    &amp;quot;RunOnceActivity.typescript.service.memoryLimit.init&amp;quot;: &amp;quot;true&amp;quot;,
-    &amp;quot;cidr.known.project.marker&amp;quot;: &amp;quot;true&amp;quot;,
-    &amp;quot;codeWithMe.voiceChat.enabledByDefault&amp;quot;: &amp;quot;false&amp;quot;,
-    &amp;quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&amp;quot;: &amp;quot;true&amp;quot;,
-    &amp;quot;git-widget-placeholder&amp;quot;: &amp;quot;05/Inheritance&amp;quot;,
-    &amp;quot;junie.onboarding.icon.badge.shown&amp;quot;: &amp;quot;true&amp;quot;,
-    &amp;quot;node.js.detected.package.eslint&amp;quot;: &amp;quot;true&amp;quot;,
-    &amp;quot;node.js.detected.package.tslint&amp;quot;: &amp;quot;true&amp;quot;,
-    &amp;quot;node.js.selected.package.eslint&amp;quot;: &amp;quot;(autodetect)&amp;quot;,
-    &amp;quot;node.js.selected.package.tslint&amp;quot;: &amp;quot;(autodetect)&amp;quot;,
-    &amp;quot;nodejs_package_manager_path&amp;quot;: &amp;quot;npm&amp;quot;,
-    &amp;quot;settings.editor.selected.configurable&amp;quot;: &amp;quot;editor.preferences.completion.inline&amp;quot;,
-    &amp;quot;to.speed.mode.migration.done&amp;quot;: &amp;quot;true&amp;quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "git-widget-placeholder": "Merging 07/ValueVsReferenceTypes"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Project.06.Interfaces">
     <configuration name="01.Collections" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -278,11 +242,6 @@
         <option name="Build" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue=".NET Project.06.Interfaces" />
-      </list>
-    </recent_temporary>
     <configuration name="07.ValueVsReferenceTypes" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -304,6 +263,11 @@
         <option name="Build" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue=".NET Project.06.Interfaces" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
