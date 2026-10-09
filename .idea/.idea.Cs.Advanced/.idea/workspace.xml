@@ -16,14 +16,6 @@
   </component>
   <component name="CMakeSettings">
     <configurations />
-    <projectFile>05.Inheritance/05.Inheritance.csproj</projectFile>
-    <projectFile>06.Interfaces/06.Interfaces.csproj</projectFile>
-  </component>
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
-  <component name="CMakeSettings">
-    <configurations />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2602af55-53f2-4d40-a7cf-1b91d94703e2" name="Changes" comment="" />
@@ -54,70 +46,6 @@
     <setting file="file://$PROJECT_DIR$/06.Interfaces/FileTextWriter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Cs.Advanced.UnitTests/ConvertCetToUtc_UnitTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Cs.Advanced.UnitTests/Inheritance.UnitTests/Inheritance.Vehicle_UnitTests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file:///usr/share/dotnet/sdk/10.0.111/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="McpProjectServerCommands">
-    <commands />
-    <urls />
-  </component>
-  <component name="NextEditCompletionFeaturesState">
-    <decayedCancelled>
-      <entry key="MS100" value="4.7311904801643775E-9" />
-      <entry key="MS500" value="0.04698592143389741" />
-      <entry key="S2" value="1.0560898200783218" />
-      <entry key="S5" value="1.975096538664075" />
-      <entry key="S10" value="2.434039281512249" />
-      <entry key="S30" value="2.798019856498961" />
-      <entry key="S60" value="2.899811906577998" />
-      <entry key="M2" value="3.2765182651615388" />
-      <entry key="M5" value="10.030113291298917" />
-      <entry key="M10" value="23.931328933775227" />
-      <entry key="M15" value="35.62510611008923" />
-      <entry key="M30" value="67.03108993622762" />
-      <entry key="H1" value="120.78572334358691" />
-      <entry key="H2" value="186.3386640864654" />
-      <entry key="H4" value="241.90366288592014" />
-      <entry key="D1" value="307.9268664447774" />
-      <entry key="W1" value="321.6363423717844" />
-    </decayedCancelled>
-    <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000000000030254" />
-      <entry key="S5" value="1.0000246782565283" />
-      <entry key="S10" value="1.0049677214624297" />
-      <entry key="S30" value="1.1706288424111413" />
-      <entry key="S60" value="1.413217253793785" />
-      <entry key="M2" value="1.6615828996174389" />
-      <entry key="M5" value="2.2499661123304255" />
-      <entry key="M10" value="3.670204658883217" />
-      <entry key="M15" value="5.610745729722005" />
-      <entry key="M30" value="11.8279751562517" />
-      <entry key="H1" value="21.363330291191133" />
-      <entry key="H2" value="31.72802812976273" />
-      <entry key="H4" value="40.055053622460164" />
-      <entry key="D1" value="49.683685816084875" />
-      <entry key="W1" value="51.65990539214127" />
-    </decayedSelected>
-    <decayedShown>
-      <entry key="MS100" value="0.0048426120365658715" />
-      <entry key="MS500" value="0.3795588643280545" />
-      <entry key="S2" value="1.691074393217932" />
-      <entry key="S5" value="2.7595512142965934" />
-      <entry key="S10" value="3.3124039582884532" />
-      <entry key="S30" value="3.9175143297084802" />
-      <entry key="S60" value="4.283855285218912" />
-      <entry key="M2" value="4.920752765372319" />
-      <entry key="M5" value="12.265396354390239" />
-      <entry key="M10" value="27.58607495555553" />
-      <entry key="M15" value="41.219713942513806" />
-      <entry key="M30" value="78.84220763593596" />
-      <entry key="H1" value="142.13374917258295" />
-      <entry key="H2" value="218.05524305594167" />
-      <entry key="H4" value="281.95146226097717" />
-      <entry key="D1" value="357.60904875239504" />
-      <entry key="W1" value="373.296024354929" />
-    </decayedShown>
     <setting file="file:///usr/share/dotnet/sdk/10.0.111/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="McpProjectServerCommands">
@@ -195,28 +123,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.01.Collections.executor": "Run",
-    ".NET Project.03.DateTimeAndTimeSpan.executor": "Run",
-    ".NET Project.04.Linq.executor": "Run",
-    ".NET Project.06.Interfaces.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "cidr.known.project.marker": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "06/Interfaces",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.qodana",
-    "to.speed.mode.migration.done": "true"
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;.NET Project.01.Collections.executor&quot;: &quot;Run&quot;,
@@ -233,17 +139,39 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;05/Inheritance&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;06/Interfaces&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion.inline&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.qodana&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  &lt;component name=&quot;PropertiesComponent&quot;&gt;{
+  &amp;quot;keyToString&amp;quot;: {
+    &amp;quot;.NET Project.01.Collections.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;.NET Project.03.DateTimeAndTimeSpan.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;.NET Project.04.Linq.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;.NET Project.06.Interfaces.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;ModuleVcsDetector.initialDetectionPerformed&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;RunOnceActivity.MCP Project settings loaded&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;RunOnceActivity.cidr.known.project.marker&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;RunOnceActivity.git.unshallow&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;RunOnceActivity.readMode.enableVisualFormatting&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;RunOnceActivity.typescript.service.memoryLimit.init&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;cidr.known.project.marker&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;codeWithMe.voiceChat.enabledByDefault&amp;quot;: &amp;quot;false&amp;quot;,
+    &amp;quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;git-widget-placeholder&amp;quot;: &amp;quot;05/Inheritance&amp;quot;,
+    &amp;quot;junie.onboarding.icon.badge.shown&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;node.js.detected.package.eslint&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;node.js.detected.package.tslint&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;node.js.selected.package.eslint&amp;quot;: &amp;quot;(autodetect)&amp;quot;,
+    &amp;quot;node.js.selected.package.tslint&amp;quot;: &amp;quot;(autodetect)&amp;quot;,
+    &amp;quot;nodejs_package_manager_path&amp;quot;: &amp;quot;npm&amp;quot;,
+    &amp;quot;settings.editor.selected.configurable&amp;quot;: &amp;quot;editor.preferences.completion.inline&amp;quot;,
+    &amp;quot;to.speed.mode.migration.done&amp;quot;: &amp;quot;true&amp;quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Project.06.Interfaces">
     <configuration name="01.Collections" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
