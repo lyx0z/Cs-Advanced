@@ -1,5 +1,12 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AFile_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002Econfig_003FJetBrains_003FRider2026_002E2_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F9758900f41414e17af5591bd998970edd0200_003F9c_003Fc4535d51_003FFile_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AWhere_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2026_002E2_003Fresharper_002Dhost_003FSourcesCache_003F494e6d83d6d62b765c56bdcf47e1615cea109f755d152e6bce86d38a5d20f0_003FWhere_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9610937d_002Dbfcb_002D4d1d_002Dadec_002D1ef1ad379e2b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.IsDeadLinePastDue_UnitTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.ConvertCetToUtc_UnitTest.Convert_CetTimeToUtcTime_FirstDate&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.ConvertCetToUtc_UnitTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=04e71576_002Dc300_002D4813_002Db782_002D907e712ff38b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="inheritace_Vehicle_UnitTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.inheritace_Vehicle_UnitTests&lt;/TestId&gt;&#xD;
@@ -8,6 +15,14 @@
     &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.inheritace_Truck_UnitTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a07e90d5_002Dfdd9_002D4630_002D9f0b_002Df706a10fc5a9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="UnitTest1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.ConvertCetToUtc_UnitTest.Convert_CetTimeToUtcTime_FirstDate&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.IsDeadLinePastDue_UnitTest.isDeadlinePastDue_DueTime_SameAsToday&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.ConvertCetToUtc_UnitTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.IsDeadLinePastDue_UnitTest.IsDeadlinePastDue_DueTime_SmallerThenToday&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9610937d_002Dbfcb_002D4d1d_002Dadec_002D1ef1ad379e2b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.IsDeadLinePastDue_UnitTest&lt;/TestId&gt;
