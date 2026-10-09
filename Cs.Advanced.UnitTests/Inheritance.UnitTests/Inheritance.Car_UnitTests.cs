@@ -54,7 +54,7 @@ public class InheritanceCarUnitTests
         var car = GetDefaultCar(speed: 5);
 
         // Act
-        car.ShiftGear(4);
+        car.ShiftGear(expectedGear);
 
         // Assert
         Assert.Equal(expectedGear, car.Gear);
@@ -68,7 +68,7 @@ public class InheritanceCarUnitTests
         var car = GetDefaultCar();
 
         // Act
-        car.Indicate(IndicatorState.Right);
+        car.Indicate(expectedIndicatorState);
 
         // Assert
         Assert.Equal(expectedIndicatorState, car.IndicatorState);
@@ -79,7 +79,7 @@ public class InheritanceCarUnitTests
     {
         // Arrange
         const int expectedOccupants = 2;
-        var car = GetDefaultCar(speed: 0, gear: 1, occupants: 1);
+        var car = GetDefaultCar(occupants: 1);
 
         // Act
         car.Board();
@@ -93,7 +93,7 @@ public class InheritanceCarUnitTests
     {
         // Arrange
         const int expectedOccupants = 1;
-        var car = GetDefaultCar(speed: 0, gear: 1, occupants: 2);
+        var car = GetDefaultCar(occupants: 2);
 
         // Act
         car.Exit();

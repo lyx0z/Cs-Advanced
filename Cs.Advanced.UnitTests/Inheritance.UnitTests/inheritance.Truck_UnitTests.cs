@@ -68,7 +68,7 @@ public class InheritaceTruckUnitTests
         var truck = GetDefaultTruck();
 
         // Act
-        truck.ShiftGear(4);
+        truck.ShiftGear(expectedGear);
 
         // Assert
         Assert.Equal(expectedGear, truck.Gear);
@@ -82,7 +82,7 @@ public class InheritaceTruckUnitTests
         var truck = GetDefaultTruck();
 
         // Act
-        truck.Indicate(IndicatorState.Right);
+        truck.Indicate(expectedIndicatorState);
 
         // Assert
         Assert.Equal(expectedIndicatorState, truck.IndicatorState);

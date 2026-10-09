@@ -60,14 +60,15 @@ public class InheritanceMotorcycleUnitTests
         Assert.Equal(expectedSpeed, motorcycle.Speed);
     }
 
-    [Fact] public void Motorcycle_CheckShiftGearMethod()
+    [Fact] 
+    public void Motorcycle_CheckShiftGearMethod()
     {
         // Arrange
         const int expectedGear = 4;
         var motorcycle = GetDefaultBike();
 
         // Act
-        motorcycle.ShiftGear(4);
+        motorcycle.ShiftGear(expectedGear);
 
         // Assert
         Assert.Equal(expectedGear, motorcycle.Gear);
@@ -81,7 +82,7 @@ public class InheritanceMotorcycleUnitTests
         var motorcycle = GetDefaultBike();
 
         // Act
-        motorcycle.Indicate(IndicatorState.Left);
+        motorcycle.Indicate(expectedIndicatorState);
 
         // Assert
         Assert.Equal(expectedIndicatorState, motorcycle.IndicatorState);

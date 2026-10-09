@@ -13,7 +13,7 @@ public class Car(
     int occupants
 ) : Vehicle(speed, gear, indicatorState, owner, productionYear, licensePlate, tankVolume, tankContent)
 {
-    public int SeatCount = seatCount;
+    private readonly int seatCount = seatCount;
     public int Occupants = occupants;
 
     public override void Accelerate()
@@ -33,7 +33,7 @@ public class Car(
 
     public void Board()
     {
-        if (Occupants < SeatCount)
+        if (Occupants < seatCount)
         {
             Occupants++;
         }
@@ -56,6 +56,6 @@ public class Car(
     {
         return $"Type:{nameof(Car)}, Speed:{Speed}, Gear:{Gear}, Indicator:{IndicatorState}, Owner:{Owner}, "
             + $"Production Year:{ProductionYear}, License Plate:{LicensePlate}, Fuel Capacity:{TankVolume}, "
-            + $"Fuel Level:{TankContent} Seat Count:{SeatCount}, Occupants:{Occupants}";
+            + $"Fuel Level:{TankContent} Seat Count:{seatCount}, Occupants:{Occupants}";
     }
 }
