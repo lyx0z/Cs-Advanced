@@ -7,6 +7,13 @@
     &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.ConvertCetToUtc_UnitTest.Convert_CetTimeToUtcTime_FirstDate&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.ConvertCetToUtc_UnitTest&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=04e71576_002Dc300_002D4813_002Db782_002D907e712ff38b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="inheritace_Vehicle_UnitTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.inheritace_Vehicle_UnitTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.inheritace_Car_UnitTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.inheritace_Bike_UnitTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.inheritace_Truck_UnitTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a07e90d5_002Dfdd9_002D4630_002D9f0b_002Df706a10fc5a9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="UnitTest1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
@@ -16,3 +23,32 @@
     &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.IsDeadLinePastDue_UnitTest.IsDeadlinePastDue_DueTime_SmallerThenToday&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9610937d_002Dbfcb_002D4d1d_002Dadec_002D1ef1ad379e2b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.IsDeadLinePastDue_UnitTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.ConvertCetToUtc_UnitTest.Convert_CetTimeToUtcTime_FirstDate&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.ConvertCetToUtc_UnitTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.inheritace_Bike_UnitTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a07e90d5_002Dfdd9_002D4630_002D9f0b_002Df706a10fc5a9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="UnitTest1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.ConvertCetToUtc_UnitTest.Convert_CetTimeToUtcTime_FirstDate&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.IsDeadLinePastDue_UnitTest.isDeadlinePastDue_DueTime_SameAsToday&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.ConvertCetToUtc_UnitTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.IsDeadLinePastDue_UnitTest.IsDeadlinePastDue_DueTime_SmallerThenToday&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.inheritace_Car_UnitTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.inheritace_Truck_UnitTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.inheritace_Bike_UnitTests.Bike_CheckBrakeMethod_WhenSpeedIsZero_StaysZero&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.inheritace_Bike_UnitTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.Inheritance.UnitTests.inheritace_Motorcycle_UnitTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.Inheritance.UnitTests.inheritace_Car_UnitTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.Inheritance.UnitTests.InheritanceMotorcycleUnitTests.Motorcycle_CheckAccelerateMethod&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.Inheritance.UnitTests.InheritanceMotorcycleUnitTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.Inheritance.UnitTests.InheritanceVehicleUnitTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.Inheritance.UnitTests.InheritaceTruckUnitTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.Inheritance.UnitTests.InheritanceCarUnitTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	
+	</wpf:ResourceDictionary>
