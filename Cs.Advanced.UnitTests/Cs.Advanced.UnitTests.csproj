@@ -19,5 +19,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\03.DateTimeAndTimeSpan\03.DateTimeAndTimeSpan.csproj" />
+    <ProjectReference Include="..\05.Inheritance\05.Inheritance.csproj" />
   </ItemGroup>
 </Project>
