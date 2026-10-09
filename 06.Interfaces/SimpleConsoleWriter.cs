@@ -6,5 +6,5 @@ public class SimpleConsoleWriter : ITextWriter
 
     public void PrintLine(string text) => Console.WriteLine(text);
 
-    public void PrintLine() => Console.WriteLine();
+    public void NewLine() => Console.WriteLine();
 }

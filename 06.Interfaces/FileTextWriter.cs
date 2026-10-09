@@ -2,21 +2,21 @@ namespace _06.Interfaces
 {
     public class FileTextWriter : ITextWriter
     {
-        private readonly string FilePath = "numbers_output.txt";
+        private const string filePath = "numbers_output.txt";
 
         public void Print(string text)
         { 
-            File.AppendAllText(FilePath, text);
+            File.AppendAllText(filePath, text);
         }
 
         public void PrintLine(string text)
         {
-            File.AppendAllText(FilePath, text + Environment.NewLine);
+            File.AppendAllText(filePath, text + Environment.NewLine);
         }
 
-        public void PrintLine()
+        public void NewLine()
         {
-            File.AppendAllText(FilePath, Environment.NewLine);
+            File.AppendAllText(filePath, Environment.NewLine);
         }
         
     }

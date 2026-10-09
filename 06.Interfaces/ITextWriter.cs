@@ -4,5 +4,5 @@ public interface ITextWriter
 {
     void Print(string text);
     void PrintLine(string text);
-    void PrintLine();
+    void NewLine();
 }

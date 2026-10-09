@@ -2,7 +2,7 @@ namespace _06.Interfaces;
 
 public class RandomTextWriter(ITextWriter textWriter)
 {
-    private readonly ITextWriter TextWriter = textWriter;
+    private readonly ITextWriter textWriter = textWriter;
 
     public void SomeNumbers()
     {
@@ -12,9 +12,9 @@ public class RandomTextWriter(ITextWriter textWriter)
             for (var col = 0; col < 10; col++)
             {
                 var number = random.Next(1, 100);
-                TextWriter.Print(number + " "); 
+                textWriter.Print(number + " "); 
             }
-            TextWriter.PrintLine(); 
+            textWriter.NewLine(); 
         }
     }
 }

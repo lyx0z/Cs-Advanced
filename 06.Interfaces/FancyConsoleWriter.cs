@@ -18,10 +18,10 @@ public class FancyConsoleWriter : ITextWriter
     public void PrintLine(string text)
     {
         Print(text);
-        PrintLine();
+        NewLine();
     }
 
-    public void PrintLine()
+    public void NewLine()
     {
         Console.WriteLine();
     }
