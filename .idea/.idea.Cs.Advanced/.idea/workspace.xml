@@ -5,10 +5,22 @@
     <projectFile>02.Enums/02.Enums.csproj</projectFile>
     <projectFile>03.DateTimeAndTimeSpan/03.DateTimeAndTimeSpan.csproj</projectFile>
     <projectFile>04.Linq/04.Linq.csproj</projectFile>
+    <projectFile>05.Inheritance/05.Inheritance.csproj</projectFile>
+    <projectFile>06.Interfaces/06.Interfaces.csproj</projectFile>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2602af55-53f2-4d40-a7cf-1b91d94703e2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/04.Linq/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/04.Linq/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06.Interfaces/FancyConsoleWriter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06.Interfaces/FileTextWriter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cs.Advanced/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cs.Advanced/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06.Interfaces/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/06.Interfaces/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06.Interfaces/RandomTextWriter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/06.Interfaces/RandomTextWriter.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,11 +34,76 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/494e6d83d6d62b765c56bdcf47e1615cea109f755d152e6bce86d38a5d20f0/Where.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9758900f41414e17af5591bd998970edd0200/9c/c4535d51/File.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/01.Collections/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/03.DateTimeAndTimeSpan/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/04.Linq/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/06.Interfaces/FileTextWriter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Cs.Advanced.UnitTests/ConvertCetToUtc_UnitTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file:///usr/share/dotnet/sdk/10.0.111/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="2.3864823034041452E-178" />
+      <entry key="MS500" value="1.0611447871827877E-35" />
+      <entry key="S2" value="7.500662012649562E-9" />
+      <entry key="S5" value="0.0018011656098487476" />
+      <entry key="S10" value="0.11221597459740819" />
+      <entry key="S30" value="1.7647763643895356" />
+      <entry key="S60" value="3.523810622761675" />
+      <entry key="M2" value="5.417772794538777" />
+      <entry key="M5" value="11.060147359002471" />
+      <entry key="M10" value="17.63043727226887" />
+      <entry key="M15" value="21.219916809354896" />
+      <entry key="M30" value="25.89424755921958" />
+      <entry key="H1" value="28.742494732628295" />
+      <entry key="H2" value="30.316465014352087" />
+      <entry key="H4" value="31.14405512977495" />
+      <entry key="D1" value="31.855331140223097" />
+      <entry key="W1" value="31.9792832003587" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0000218804206544" />
+      <entry key="MS500" value="1.116952937228925" />
+      <entry key="S2" value="1.5847938320259738" />
+      <entry key="S5" value="1.8068654388137197" />
+      <entry key="S10" value="1.898256889099014" />
+      <entry key="S30" value="1.964930459872096" />
+      <entry key="S60" value="1.9952070534731665" />
+      <entry key="M2" value="2.2212298288895567" />
+      <entry key="M5" value="3.5406441068573153" />
+      <entry key="M10" value="5.015898479138612" />
+      <entry key="M15" value="5.786292267365418" />
+      <entry key="M30" value="6.762058822187962" />
+      <entry key="H1" value="7.344125872537234" />
+      <entry key="H2" value="7.662262274704634" />
+      <entry key="H4" value="7.828605123555467" />
+      <entry key="D1" value="7.971076718869085" />
+      <entry key="W1" value="7.995859260524361" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="2.4190459408559724E-5" />
+      <entry key="MS500" value="0.17176305250256965" />
+      <entry key="S2" value="1.0666968533577579" />
+      <entry key="S5" value="1.5552130828855553" />
+      <entry key="S10" value="1.8728647466078445" />
+      <entry key="S30" value="3.6731424356618874" />
+      <entry key="S60" value="5.485669833217112" />
+      <entry key="M2" value="7.6175945594713275" />
+      <entry key="M5" value="14.582471437632101" />
+      <entry key="M10" value="22.631220372967732" />
+      <entry key="M15" value="26.993972253535855" />
+      <entry key="M30" value="32.64878853501884" />
+      <entry key="H1" value="36.08243715849297" />
+      <entry key="H2" value="37.976518548699154" />
+      <entry key="H4" value="38.971525158032115" />
+      <entry key="D1" value="39.82621427885315" />
+      <entry key="W1" value="39.97511469712739" />
+    </decayedShown>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -40,25 +117,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.01.Collections.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.03.DateTimeAndTimeSpan.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.04.Linq.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;04/Linq&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.qodana&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.01.Collections.executor": "Run",
+    ".NET Project.03.DateTimeAndTimeSpan.executor": "Run",
+    ".NET Project.04.Linq.executor": "Run",
+    ".NET Project.06.Interfaces.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "06/Interfaces",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.qodana"
   }
-}</component>
-  <component name="RunManager" selected=".NET Project.04.Linq">
+}]]></component>
+  <component name="RunManager" selected=".NET Project.06.Interfaces">
     <configuration name="01.Collections" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -122,6 +201,32 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="06.Interfaces" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/06.Interfaces/06.Interfaces.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="net10.0" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue=".NET Project.06.Interfaces" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
