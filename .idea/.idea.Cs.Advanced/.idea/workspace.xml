@@ -18,19 +18,7 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2602af55-53f2-4d40-a7cf-1b91d94703e2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/05.Inheritance/IndicatorState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cs.Advanced.UnitTests/Inheritance.UnitTests/Inheritance.Vehicle_UnitTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cs.Advanced/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cs.Advanced/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.Inheritance/Car.cs" beforeDir="false" afterPath="$PROJECT_DIR$/05.Inheritance/Car.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.Inheritance/Motorcycle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/05.Inheritance/Motorcycle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.Inheritance/Truck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/05.Inheritance/Truck.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.Inheritance/Vehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/05.Inheritance/Vehicle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cs.Advanced.UnitTests/Inheritance.UnitTests/Inheritance.Car_UnitTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cs.Advanced.UnitTests/Inheritance.UnitTests/Inheritance.Car_UnitTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cs.Advanced.UnitTests/Inheritance.UnitTests/Inheritance.Motorcycle_UnitTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cs.Advanced.UnitTests/Inheritance.UnitTests/Inheritance.Motorcycle_UnitTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cs.Advanced.UnitTests/Inheritance.UnitTests/inheritance.Truck_UnitTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cs.Advanced.UnitTests/Inheritance.UnitTests/inheritance.Truck_UnitTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cs.Advanced.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Cs.Advanced.sln.DotSettings.user" afterDir="false" />
-    </list>
+    <list default="true" id="2602af55-53f2-4d40-a7cf-1b91d94703e2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
