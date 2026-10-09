@@ -13,7 +13,7 @@ public abstract class Vehicle
     public int Gear;
     public IndicatorState IndicatorState;
     public string Owner;
-    public int YearBuilt;
+    public int ProductionYear;
     public string LicensePlate;
     public int TankVolume;
     public int TankContent;
@@ -23,7 +23,7 @@ public abstract class Vehicle
         int gear,
         IndicatorState indicatorState,
         string owner,
-        int yearBuilt,
+        int productionYear,
         string licensePlate,
         int tankVolume,
         int tankContent
@@ -33,7 +33,7 @@ public abstract class Vehicle
         Gear = gear;
         IndicatorState = indicatorState;
         Owner = owner;
-        YearBuilt = yearBuilt;
+        ProductionYear = productionYear;
         LicensePlate = licensePlate;
         TankVolume = tankVolume;
         TankContent = tankContent;
@@ -49,10 +49,6 @@ public abstract class Vehicle
         if (Speed > 0)
         {
             Speed--;
-        }
-        else
-        {
-            Speed = 0;
         }
     }
 
@@ -79,7 +75,7 @@ public abstract class Vehicle
     public override string ToString()
     {
         return $"Type:{nameof(Vehicle)}, Speed:{Speed}, Gear:{Gear}, Indicator:{IndicatorState}, Owner:{Owner}, "
-            + $"Production Year:{YearBuilt}, License Plate:{LicensePlate}, Fuel Capacity:{TankVolume}, "
+            + $"Production Year:{ProductionYear}, License Plate:{LicensePlate}, Fuel Capacity:{TankVolume}, "
             + $"Fuel Level:{TankContent}";
     }
 }

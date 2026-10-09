@@ -1,16 +1,16 @@
 namespace _05.Inheritance;
 
-public class Bike(
+public class Motorcycle(
     int speed,
     int gear,
     IndicatorState indicatorState,
     string owner,
-    int yearBuilt,
+    int productionYear,
     string licensePlate,
     int tankVolume,
     int tankContent,
     int leanAngle
-) : Vehicle(speed, gear, indicatorState, owner, yearBuilt, licensePlate, tankVolume, tankContent)
+) : Vehicle(speed, gear, indicatorState, owner, productionYear, licensePlate, tankVolume, tankContent)
 {
     public int LeanAngle = leanAngle;
 
@@ -21,11 +21,9 @@ public class Bike(
 
     public override void Brake()
     {
-        if (Speed > 0)
-        {
-            Speed -= 6;
-        }
-        else
+        Speed -= 6;
+    
+        if (Speed < 0)
         {
             Speed = 0;
         }
@@ -33,11 +31,9 @@ public class Bike(
 
     public void Left()
     {
-        if (LeanAngle > 0)
-        {
-            LeanAngle -= 2;
-        }
-        else
+        LeanAngle -= 2;
+        
+        if (LeanAngle < 0)
         {
             LeanAngle = 0;
         }
@@ -50,13 +46,13 @@ public class Bike(
 
     public override string GetTypeName()
     {
-        return "Bike";
+        return "Motorcycle";
     }
 
     public override string ToString()
     {
-        return $"Type:{nameof(Bike)}, Speed:{Speed}, Gear:{Gear}, Indicator:{IndicatorState}, Owner:{Owner}, "
-            + $"Production Year:{YearBuilt}, License Plate:{LicensePlate}, Fuel Capacity:{TankVolume}, "
+        return $"Type:{nameof(Motorcycle)}, Speed:{Speed}, Gear:{Gear}, Indicator:{IndicatorState}, Owner:{Owner}, "
+            + $"Production Year:{ProductionYear}, License Plate:{LicensePlate}, Fuel Capacity:{TankVolume}, "
             + $"Fuel Level:{TankContent} Lean Angle:{LeanAngle}";
     }
 }

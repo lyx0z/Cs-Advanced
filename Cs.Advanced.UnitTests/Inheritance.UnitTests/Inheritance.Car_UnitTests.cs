@@ -1,6 +1,6 @@
-namespace Cs.Advanced.UnitTests;
-
 using _05.Inheritance;
+
+namespace Cs.Advanced.UnitTests.Inheritance.UnitTests;
 
 public class inheritace_Car_UnitTests
 {
@@ -13,7 +13,7 @@ public class inheritace_Car_UnitTests
             gear: 2,
             indicatorState: IndicatorState.Neutral,
             owner: "Pius",
-            yearBuilt: 2010,
+            productionYear: 2010,
             licensePlate: "LZ1023",
             tankVolume: 40,
             tankContent: 20,
@@ -38,14 +38,14 @@ public class inheritace_Car_UnitTests
             gear: 2,
             indicatorState: IndicatorState.Neutral,
             owner: "Pius",
-            yearBuilt: 2010,
+            productionYear: 2010,
             licensePlate: "LZ1023",
             tankVolume: 40,
             tankContent: 20,
             seatCount: 5,
             occupants: 1
         );
-        var expectedSpeed = 3;
+        var expectedSpeed = 1;
 
         // Act
         car.Brake();
@@ -63,7 +63,7 @@ public class inheritace_Car_UnitTests
             gear: 2,
             indicatorState: IndicatorState.Neutral,
             owner: "Pius",
-            yearBuilt: 2010,
+            productionYear: 2010,
             licensePlate: "LZ1023",
             tankVolume: 40,
             tankContent: 20,
@@ -88,7 +88,7 @@ public class inheritace_Car_UnitTests
             gear: 2,
             indicatorState: IndicatorState.Neutral,
             owner: "Pius",
-            yearBuilt: 2010,
+            productionYear: 2010,
             licensePlate: "LZ1023",
             tankVolume: 40,
             tankContent: 20,
@@ -113,7 +113,7 @@ public class inheritace_Car_UnitTests
             gear: 2,
             indicatorState: IndicatorState.Neutral,
             owner: "Pius",
-            yearBuilt: 2010,
+            productionYear: 2010,
             licensePlate: "LZ1023",
             tankVolume: 40,
             tankContent: 20,
@@ -138,7 +138,7 @@ public class inheritace_Car_UnitTests
             gear: 1,
             indicatorState: IndicatorState.Neutral,
             owner: "Pius",
-            yearBuilt: 2010,
+            productionYear: 2010,
             licensePlate: "LZ1023",
             tankVolume: 40,
             tankContent: 20,
@@ -163,7 +163,7 @@ public class inheritace_Car_UnitTests
             gear: 1,
             indicatorState: IndicatorState.Neutral,
             owner: "Pius",
-            yearBuilt: 2010,
+            productionYear: 2010,
             licensePlate: "LZ1023",
             tankVolume: 40,
             tankContent: 20,

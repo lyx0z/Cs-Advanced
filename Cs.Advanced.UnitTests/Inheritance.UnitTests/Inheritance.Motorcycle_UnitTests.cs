@@ -1,19 +1,19 @@
-namespace Cs.Advanced.UnitTests;
-
 using _05.Inheritance;
 
-public class inheritace_Bike_UnitTests
+namespace Cs.Advanced.UnitTests.Inheritance.UnitTests;
+
+public class inheritace_Motorcycle_UnitTests
 {
     [Fact]
-    public void Bike_CheckAccelerateMethod()
+    public void Motorcycle_CheckAccelerateMethod()
     {
         // Arrange
-        var bike = new Bike(
+        var motorcycle = new Motorcycle(
             speed: 5,
             gear: 2,
             indicatorState: IndicatorState.Neutral,
             owner: "Pius",
-            yearBuilt: 2010,
+            productionYear: 2010,
             licensePlate: "LZ1023",
             tankVolume: 40,
             tankContent: 20,
@@ -22,22 +22,22 @@ public class inheritace_Bike_UnitTests
         var expectedSpeed = 11;
 
         // Act
-        bike.Accelerate();
+        motorcycle.Accelerate();
 
         // Assert
-        Assert.Equal(expectedSpeed, bike.Speed);
+        Assert.Equal(expectedSpeed, motorcycle.Speed);
     }
 
     [Fact]
-    public void Bike_CheckBrakeMethod()
+    public void Motorcycle_CheckBrakeMethod()
     {
         // Arrange
-        var bike = new Bike(
+        var motorcycle = new Motorcycle(
             speed: 10,
             gear: 2,
             indicatorState: IndicatorState.Neutral,
             owner: "Pius",
-            yearBuilt: 2010,
+            productionYear: 2010,
             licensePlate: "LZ1023",
             tankVolume: 40,
             tankContent: 20,
@@ -46,22 +46,22 @@ public class inheritace_Bike_UnitTests
         var expectedSpeed = 4;
 
         // Act
-        bike.Brake();
+        motorcycle.Brake();
 
         // Assert
-        Assert.Equal(expectedSpeed, bike.Speed);
+        Assert.Equal(expectedSpeed, motorcycle.Speed);
     }
 
     [Fact]
-    public void Bike_CheckBrakeMethod_DoesNotGoBelowZero()
+    public void Motorcycle_CheckBrakeMethod_DoesNotGoBelowZero()
     {
         // Arrange
-        var bike = new Bike(
+        var motorcycle = new Motorcycle(
             speed: 3,
             gear: 2,
             indicatorState: IndicatorState.Neutral,
             owner: "Pius",
-            yearBuilt: 2010,
+            productionYear: 2010,
             licensePlate: "LZ1023",
             tankVolume: 40,
             tankContent: 20,
@@ -70,22 +70,22 @@ public class inheritace_Bike_UnitTests
         var expectedSpeed = 0;
 
         // Act
-        bike.Brake();
+        motorcycle.Brake();
 
         // Assert
-        Assert.Equal(expectedSpeed, bike.Speed);
+        Assert.Equal(expectedSpeed, motorcycle.Speed);
     }
 
     [Fact]
-    public void Bike_CheckBrakeMethod_WhenSpeedIsZero_StaysZero()
+    public void Motorcycle_CheckBrakeMethod_WhenSpeedIsZero_StaysZero()
     {
         // Arrange
-        var bike = new Bike(
+        var motorcycle = new Motorcycle(
             speed: 0,
             gear: 2,
             indicatorState: IndicatorState.Neutral,
             owner: "Pius",
-            yearBuilt: 2010,
+            productionYear: 2010,
             licensePlate: "LZ1023",
             tankVolume: 40,
             tankContent: 20,
@@ -94,22 +94,21 @@ public class inheritace_Bike_UnitTests
         var expectedSpeed = 0;
 
         // Act
-        bike.Brake();
+        motorcycle.Brake();
 
         // Assert
-        Assert.Equal(expectedSpeed, bike.Speed);
+        Assert.Equal(expectedSpeed, motorcycle.Speed);
     }
 
-    [Fact]
-    public void Bike_CheckShiftGearMethod()
+    [Fact] public void Motorcycle_CheckShiftGearMethod()
     {
         // Arrange
-        var bike = new Bike(
+        var motorcycle = new Motorcycle(
             speed: 5,
             gear: 2,
             indicatorState: IndicatorState.Neutral,
             owner: "Pius",
-            yearBuilt: 2010,
+            productionYear: 2010,
             licensePlate: "LZ1023",
             tankVolume: 40,
             tankContent: 20,
@@ -118,22 +117,22 @@ public class inheritace_Bike_UnitTests
         var expectedGear = 4;
 
         // Act
-        bike.ShiftGear(4);
+        motorcycle.ShiftGear(4);
 
         // Assert
-        Assert.Equal(expectedGear, bike.Gear);
+        Assert.Equal(expectedGear, motorcycle.Gear);
     }
 
     [Fact]
-    public void Bike_CheckIndicateMethod()
+    public void Motorcycle_CheckIndicateMethod()
     {
         // Arrange
-        var bike = new Bike(
+        var motorcycle = new Motorcycle(
             speed: 5,
             gear: 2,
             indicatorState: IndicatorState.Neutral,
             owner: "Pius",
-            yearBuilt: 2010,
+            productionYear: 2010,
             licensePlate: "LZ1023",
             tankVolume: 40,
             tankContent: 20,
@@ -142,22 +141,22 @@ public class inheritace_Bike_UnitTests
         var expectedIndicatorState = IndicatorState.Left;
 
         // Act
-        bike.Indicate(IndicatorState.Left);
+        motorcycle.Indicate(IndicatorState.Left);
 
         // Assert
-        Assert.Equal(expectedIndicatorState, bike.IndicatorState);
+        Assert.Equal(expectedIndicatorState, motorcycle.IndicatorState);
     }
 
     [Fact]
-    public void Bike_CheckLeftMethod()
+    public void Motorcycle_CheckLeftMethod()
     {
         // Arrange
-        var bike = new Bike(
+        var motorcycle = new Motorcycle(
             speed: 0,
             gear: 1,
             indicatorState: IndicatorState.Neutral,
             owner: "Pius",
-            yearBuilt: 2010,
+            productionYear: 2010,
             licensePlate: "LZ1023",
             tankVolume: 40,
             tankContent: 20,
@@ -166,22 +165,22 @@ public class inheritace_Bike_UnitTests
         var expectedLeanAngle = 0;
 
         // Act
-        bike.Left();
+        motorcycle.Left();
 
         // Assert
-        Assert.Equal(expectedLeanAngle, bike.LeanAngle);
+        Assert.Equal(expectedLeanAngle, motorcycle.LeanAngle);
     }
 
     [Fact]
-    public void Bike_CheckRightMethod()
+    public void Motorcycle_CheckRightMethod()
     {
         // Arrange
-        var bike = new Bike(
+        var motorcycle = new Motorcycle(
             speed: 0,
             gear: 1,
             indicatorState: IndicatorState.Neutral,
             owner: "Pius",
-            yearBuilt: 2010,
+            productionYear: 2010,
             licensePlate: "LZ1023",
             tankVolume: 40,
             tankContent: 20,
@@ -190,9 +189,9 @@ public class inheritace_Bike_UnitTests
         var expectedLeanAngle = 2;
 
         // Act
-        bike.Right();
+        motorcycle.Right();
 
         // Assert
-        Assert.Equal(expectedLeanAngle, bike.LeanAngle);
+        Assert.Equal(expectedLeanAngle, motorcycle.LeanAngle);
     }
 }

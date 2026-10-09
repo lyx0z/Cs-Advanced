@@ -4,12 +4,12 @@ public static class Program
 {
     public static void Main()
     {
-        var bike = new Bike(
+        var motorcycle = new Motorcycle(
             speed: 10,
             gear: 1,
             indicatorState: IndicatorState.Neutral,
             owner: "Pius",
-            yearBuilt: 2010,
+            productionYear: 2010,
             licensePlate: "LZ1023",
             tankVolume: 40,
             tankContent: 20,
@@ -21,7 +21,7 @@ public static class Program
             gear: 1,
             indicatorState: IndicatorState.Neutral,
             owner: "Eray",
-            yearBuilt: 2000,
+            productionYear: 2000,
             licensePlate: "ZH9219",
             tankVolume: 50,
             tankContent: 10,
@@ -34,22 +34,22 @@ public static class Program
             gear: 2,
             IndicatorState.Left,
             owner: "Victor",
-            yearBuilt: 1990,
+            productionYear: 1990,
             licensePlate: "ZH6767",
             tankVolume: 67,
             tankContent: 40,
             cargoWeight: 50
         );
 
-        bike.Accelerate();
+        motorcycle.Accelerate();
         car.Exit();
         truck.Load(20);
 
-        var bikeContents = bike.ToString();
+        var motorcycleContents = motorcycle.ToString();
         var carContents = car.ToString();
         var truckContents = truck.ToString();
 
-        Console.WriteLine(bikeContents);
+        Console.WriteLine(motorcycleContents);
         Console.WriteLine(carContents);
         Console.WriteLine(truckContents);
     }

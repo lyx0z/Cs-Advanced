@@ -5,12 +5,12 @@ public class Truck(
     int gear,
     IndicatorState indicatorState,
     string owner,
-    int yearBuilt,
+    int productionYear,
     string licensePlate,
     int tankVolume,
     int tankContent,
     int cargoWeight
-) : Vehicle(speed, gear, indicatorState, owner, yearBuilt, licensePlate, tankVolume, tankContent)
+) : Vehicle(speed, gear, indicatorState, owner, productionYear, licensePlate, tankVolume, tankContent)
 {
     public int CargoWeight = cargoWeight;
 
@@ -21,11 +21,9 @@ public class Truck(
 
     public override void Brake()
     {
-        if (Speed > 0)
-        {
-            Speed -= 6;
-        }
-        else
+        Speed -= 6;
+    
+        if (Speed < 0)
         {
             Speed = 0;
         }
@@ -55,8 +53,8 @@ public class Truck(
 
     public override string ToString()
     {
-        return $"Type:{nameof(Car)}, Speed:{Speed}, Gear:{Gear}, Indicator:{IndicatorState}, Owner:{Owner}, "
-            + $"Production Year:{YearBuilt}, License Plate:{LicensePlate}, Fuel Capacity:{TankVolume}, "
+        return $"Type:{nameof(Truck)}, Speed:{Speed}, Gear:{Gear}, Indicator:{IndicatorState}, Owner:{Owner}, "
+            + $"Production Year:{ProductionYear}, License Plate:{LicensePlate}, Fuel Capacity:{TankVolume}, "
             + $"Fuel Level:{TankContent} Cargo Weight:{CargoWeight}";
     }
 }
