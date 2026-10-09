@@ -4,6 +4,7 @@
   <Project Path="03.DateTimeAndTimeSpan/03.DateTimeAndTimeSpan.csproj" />
   <Project Path="05.Inheritance/05.Inheritance.csproj" />
   <Project Path="07.ValueVsReferenceTypes/07.ValueVsReferenceTypes.csproj" />
+  <Project Path="06.Interfaces/06.Interfaces.csproj" />
   <Project Path="Cs.Advanced.UnitTests/Cs.Advanced.UnitTests.csproj" />
   <Project Path="04.Linq/04.Linq.csproj" />
 </Solution>
