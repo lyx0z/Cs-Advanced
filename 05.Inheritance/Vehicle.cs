@@ -1,12 +1,5 @@
 namespace _05.Inheritance;
 
-public enum IndicatorState
-{
-    Left,
-    Right,
-    Neutral,
-}
-
 public abstract class Vehicle
 {
     public int Speed;
@@ -18,7 +11,7 @@ public abstract class Vehicle
     public int TankVolume;
     public int TankContent;
 
-    public Vehicle(
+    protected Vehicle(
         int speed,
         int gear,
         IndicatorState indicatorState,
@@ -64,12 +57,19 @@ public abstract class Vehicle
 
     public void Refuel(int liters)
     {
-        TankContent += liters;
+        if (TankContent + liters > TankVolume)
+        {
+            TankContent = TankVolume;
+        }
+        else
+        {
+            TankContent += liters;
+        }
     }
 
     public virtual string GetTypeName()
     {
-        return "Vehicle";
+        return nameof(Vehicle);
     }
 
     public override string ToString()

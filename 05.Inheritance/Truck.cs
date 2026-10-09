@@ -21,7 +21,7 @@ public class Truck(
 
     public override void Brake()
     {
-        Speed -= 6;
+        Speed -= 2;
     
         if (Speed < 0)
         {
@@ -36,19 +36,15 @@ public class Truck(
 
     public void Unload(int weight)
     {
-        if (CargoWeight > 0)
+        if (CargoWeight - weight >= 0)
         {
             CargoWeight -= weight;
-        }
-        else
-        {
-            CargoWeight = 0;
         }
     }
 
     public override string GetTypeName()
     {
-        return "LKW";
+        return nameof(Truck);
     }
 
     public override string ToString()

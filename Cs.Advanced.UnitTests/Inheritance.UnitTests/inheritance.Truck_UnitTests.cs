@@ -1,25 +1,15 @@
-namespace Cs.Advanced.UnitTests;
-
 using _05.Inheritance;
 
-public class inheritace_Truck_UnitTests
+namespace Cs.Advanced.UnitTests.Inheritance.UnitTests;
+
+public class InheritaceTruckUnitTests
 {
     [Fact]
     public void Truck_CheckAccelerateMethod()
     {
         // Arrange
-        var truck = new Truck(
-            speed: 5,
-            gear: 2,
-            indicatorState: IndicatorState.Neutral,
-            owner: "Pius",
-            productionYear: 2010,
-            licensePlate: "LZ1023",
-            tankVolume: 40,
-            tankContent: 20,
-            cargoWeight: 100
-        );
-        var expectedSpeed = 7;
+        const int expectedSpeed = 7;
+        var truck = GetDefaultTruck(speed: 5);
 
         // Act
         truck.Accelerate();
@@ -32,18 +22,8 @@ public class inheritace_Truck_UnitTests
     public void Truck_CheckBrakeMethod()
     {
         // Arrange
-        var truck = new Truck(
-            speed: 10,
-            gear: 2,
-            indicatorState: IndicatorState.Neutral,
-            owner: "Pius",
-            productionYear: 2010,
-            licensePlate: "LZ1023",
-            tankVolume: 40,
-            tankContent: 20,
-            cargoWeight: 100
-        );
-        var expectedSpeed = 4;
+        const int expectedSpeed = 8;
+        var truck = GetDefaultTruck(speed: 10);
 
         // Act
         truck.Brake();
@@ -56,18 +36,8 @@ public class inheritace_Truck_UnitTests
     public void Truck_CheckBrakeMethod_WhenSpeedIsZero_StaysZero()
     {
         // Arrange
-        var truck = new Truck(
-            speed: 0,
-            gear: 2,
-            indicatorState: IndicatorState.Neutral,
-            owner: "Pius",
-            productionYear: 2010,
-            licensePlate: "LZ1023",
-            tankVolume: 40,
-            tankContent: 20,
-            cargoWeight: 100
-        );
-        var expectedSpeed = 0;
+        const int expectedSpeed = 0;
+        var truck = GetDefaultTruck(speed: 0);
 
         // Act
         truck.Brake();
@@ -80,18 +50,8 @@ public class inheritace_Truck_UnitTests
     public void Truck_CheckBrakeMethod_WhenResultingSpeedWouldBeNegative_SetToZero()
     {
         // Arrange
-        var truck = new Truck(
-            speed: 3,
-            gear: 2,
-            indicatorState: IndicatorState.Neutral,
-            owner: "Pius",
-            productionYear: 2010,
-            licensePlate: "LZ1023",
-            tankVolume: 40,
-            tankContent: 20,
-            cargoWeight: 100
-        );
-        var expectedSpeed = 0;
+        const int expectedSpeed = 0;
+        var truck = GetDefaultTruck(speed: 1);
 
         // Act
         truck.Brake();
@@ -104,18 +64,8 @@ public class inheritace_Truck_UnitTests
     public void Truck_CheckShiftGearMethod()
     {
         // Arrange
-        var truck = new Truck(
-            speed: 5,
-            gear: 2,
-            indicatorState: IndicatorState.Neutral,
-            owner: "Pius",
-            productionYear: 2010,
-            licensePlate: "LZ1023",
-            tankVolume: 40,
-            tankContent: 20,
-            cargoWeight: 100
-        );
-        var expectedGear = 4;
+        const int expectedGear = 4;
+        var truck = GetDefaultTruck();
 
         // Act
         truck.ShiftGear(4);
@@ -128,18 +78,8 @@ public class inheritace_Truck_UnitTests
     public void Truck_CheckIndicateMethod()
     {
         // Arrange
-        var truck = new Truck(
-            speed: 5,
-            gear: 2,
-            indicatorState: IndicatorState.Neutral,
-            owner: "Pius",
-            productionYear: 2010,
-            licensePlate: "LZ1023",
-            tankVolume: 40,
-            tankContent: 20,
-            cargoWeight: 100
-        );
-        var expectedIndicatorState = IndicatorState.Right;
+        const IndicatorState expectedIndicatorState = IndicatorState.Right;
+        var truck = GetDefaultTruck();
 
         // Act
         truck.Indicate(IndicatorState.Right);
@@ -152,18 +92,8 @@ public class inheritace_Truck_UnitTests
     public void Truck_CheckLoadMethod()
     {
         // Arrange
-        var truck = new Truck(
-            speed: 0,
-            gear: 1,
-            indicatorState: IndicatorState.Neutral,
-            owner: "Pius",
-            productionYear: 2010,
-            licensePlate: "LZ1023",
-            tankVolume: 40,
-            tankContent: 20,
-            cargoWeight: 100
-        );
-        var expectedCargoWeight = 150;
+        const int expectedCargoWeight = 150;
+        var truck = GetDefaultTruck(cargoWeight: 100);
 
         // Act
         truck.Load(50);
@@ -176,18 +106,8 @@ public class inheritace_Truck_UnitTests
     public void Truck_CheckUnloadMethod_WhenCargoWeightPositive_SubtractsWeight()
     {
         // Arrange
-        var truck = new Truck(
-            speed: 0,
-            gear: 1,
-            indicatorState: IndicatorState.Neutral,
-            owner: "Pius",
-            productionYear: 2010,
-            licensePlate: "LZ1023",
-            tankVolume: 40,
-            tankContent: 20,
-            cargoWeight: 100
-        );
-        var expectedCargoWeight = 70;
+        const int expectedCargoWeight = 70;
+        var truck = GetDefaultTruck(cargoWeight: 100);
 
         // Act
         truck.Unload(30);
@@ -200,23 +120,38 @@ public class inheritace_Truck_UnitTests
     public void Truck_CheckUnloadMethod_WhenCargoWeightIsZero_StaysZero()
     {
         // Arrange
-        var truck = new Truck(
-            speed: 5,
-            gear: 2,
-            indicatorState: IndicatorState.Neutral,
-            owner: "Pius",
-            productionYear: 2010,
-            licensePlate: "LZ1023",
-            tankVolume: 40,
-            tankContent: 20,
-            cargoWeight: 0
-        );
-        var expectedCargoWeight = 0;
+        const int expectedCargoWeight = 0;
+        var truck = GetDefaultTruck(cargoWeight: 0);
 
         // Act
         truck.Unload(10);
 
         // Assert
         Assert.Equal(expectedCargoWeight, truck.CargoWeight);
+    }
+
+    private static Truck GetDefaultTruck(
+        int speed = 0,
+        int gear = 2,
+        IndicatorState indicatorState = IndicatorState.Neutral,
+        string owner = "Pius",
+        int productionYear = 2010,
+        string licensePlate = "LZ1023",
+        int tankVolume = 40,
+        int tankContent = 20,
+        int cargoWeight = 100
+    )
+    {
+        return new Truck(
+            speed,
+            gear,
+            indicatorState,
+            owner,
+            productionYear,
+            licensePlate,
+            tankVolume,
+            tankContent,
+            cargoWeight
+        );
     }
 }

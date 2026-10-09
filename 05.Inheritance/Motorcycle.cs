@@ -33,20 +33,25 @@ public class Motorcycle(
     {
         LeanAngle -= 2;
         
-        if (LeanAngle < 0)
+        if (LeanAngle <= -8)
         {
-            LeanAngle = 0;
+            LeanAngle = -8;
         }
     }
 
     public void Right()
     {
         LeanAngle += 2;
+
+        if (LeanAngle >= 8)
+        {
+            LeanAngle = 8;
+        }
     }
 
     public override string GetTypeName()
     {
-        return "Motorcycle";
+        return nameof(Motorcycle);
     }
 
     public override string ToString()

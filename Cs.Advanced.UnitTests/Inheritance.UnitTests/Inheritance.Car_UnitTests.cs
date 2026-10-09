@@ -2,25 +2,14 @@ using _05.Inheritance;
 
 namespace Cs.Advanced.UnitTests.Inheritance.UnitTests;
 
-public class inheritace_Car_UnitTests
+public class InheritanceCarUnitTests
 {
     [Fact]
     public void Car_CheckAccelerateMethod()
     {
         // Arrange
-        var car = new Car(
-            speed: 5,
-            gear: 2,
-            indicatorState: IndicatorState.Neutral,
-            owner: "Pius",
-            productionYear: 2010,
-            licensePlate: "LZ1023",
-            tankVolume: 40,
-            tankContent: 20,
-            seatCount: 5,
-            occupants: 1
-        );
-        var expectedSpeed = 9;
+        const int expectedSpeed = 9;
+        var car = GetDefaultCar(speed: 5);
 
         // Act
         car.Accelerate();
@@ -33,19 +22,8 @@ public class inheritace_Car_UnitTests
     public void Car_CheckBrakeMethod()
     {
         // Arrange
-        var car = new Car(
-            speed: 5,
-            gear: 2,
-            indicatorState: IndicatorState.Neutral,
-            owner: "Pius",
-            productionYear: 2010,
-            licensePlate: "LZ1023",
-            tankVolume: 40,
-            tankContent: 20,
-            seatCount: 5,
-            occupants: 1
-        );
-        var expectedSpeed = 1;
+        const int expectedSpeed = 1;
+        var car = GetDefaultCar(speed: 5);
 
         // Act
         car.Brake();
@@ -58,19 +36,8 @@ public class inheritace_Car_UnitTests
     public void Car_CheckBrakeMethod_CantGoBelowZero()
     {
         // Arrange
-        var car = new Car(
-            speed: 1,
-            gear: 2,
-            indicatorState: IndicatorState.Neutral,
-            owner: "Pius",
-            productionYear: 2010,
-            licensePlate: "LZ1023",
-            tankVolume: 40,
-            tankContent: 20,
-            seatCount: 5,
-            occupants: 1
-        );
-        var expectedSpeed = 0;
+        const int expectedSpeed = 0;
+        var car = GetDefaultCar(speed: 1);
 
         // Act
         car.Brake();
@@ -83,19 +50,8 @@ public class inheritace_Car_UnitTests
     public void Car_CheckShiftGearMethod()
     {
         // Arrange
-        var car = new Car(
-            speed: 5,
-            gear: 2,
-            indicatorState: IndicatorState.Neutral,
-            owner: "Pius",
-            productionYear: 2010,
-            licensePlate: "LZ1023",
-            tankVolume: 40,
-            tankContent: 20,
-            seatCount: 5,
-            occupants: 1
-        );
-        var expectedGear = 4;
+        const int expectedGear = 4;
+        var car = GetDefaultCar(speed: 5);
 
         // Act
         car.ShiftGear(4);
@@ -108,19 +64,8 @@ public class inheritace_Car_UnitTests
     public void Car_CheckIndicateMethod()
     {
         // Arrange
-        var car = new Car(
-            speed: 5,
-            gear: 2,
-            indicatorState: IndicatorState.Neutral,
-            owner: "Pius",
-            productionYear: 2010,
-            licensePlate: "LZ1023",
-            tankVolume: 40,
-            tankContent: 20,
-            seatCount: 5,
-            occupants: 1
-        );
-        var expectedIndicatorState = IndicatorState.Right;
+        const IndicatorState expectedIndicatorState = IndicatorState.Right;
+        var car = GetDefaultCar();
 
         // Act
         car.Indicate(IndicatorState.Right);
@@ -133,19 +78,8 @@ public class inheritace_Car_UnitTests
     public void Car_CheckBoardMethod()
     {
         // Arrange
-        var car = new Car(
-            speed: 0,
-            gear: 1,
-            indicatorState: IndicatorState.Neutral,
-            owner: "Pius",
-            productionYear: 2010,
-            licensePlate: "LZ1023",
-            tankVolume: 40,
-            tankContent: 20,
-            seatCount: 5,
-            occupants: 1
-        );
-        var expectedOccupants = 2;
+        const int expectedOccupants = 2;
+        var car = GetDefaultCar(speed: 0, gear: 1, occupants: 1);
 
         // Act
         car.Board();
@@ -158,24 +92,40 @@ public class inheritace_Car_UnitTests
     public void Car_CheckExitMethod()
     {
         // Arrange
-        var car = new Car(
-            speed: 0,
-            gear: 1,
-            indicatorState: IndicatorState.Neutral,
-            owner: "Pius",
-            productionYear: 2010,
-            licensePlate: "LZ1023",
-            tankVolume: 40,
-            tankContent: 20,
-            seatCount: 5,
-            occupants: 2
-        );
-        var expectedOccupants = 1;
+        const int expectedOccupants = 1;
+        var car = GetDefaultCar(speed: 0, gear: 1, occupants: 2);
 
         // Act
         car.Exit();
 
         // Assert
         Assert.Equal(expectedOccupants, car.Occupants);
+    }
+
+    private static Car GetDefaultCar(
+        int speed = 0,
+        int gear = 2,
+        IndicatorState indicatorState = IndicatorState.Neutral,
+        string owner = "Pius",
+        int productionYear = 2010,
+        string licensePlate = "LZ1023",
+        int tankVolume = 40,
+        int tankContent = 20,
+        int seatCount = 5,
+        int occupants = 1
+    )
+    {
+        return new Car(
+            speed,
+            gear,
+            indicatorState,
+            owner,
+            productionYear,
+            licensePlate,
+            tankVolume,
+            tankContent,
+            seatCount,
+            occupants
+        );
     }
 }

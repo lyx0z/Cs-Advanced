@@ -27,6 +27,12 @@
     &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.inheritace_Bike_UnitTests.Bike_CheckBrakeMethod_WhenSpeedIsZero_StaysZero&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.inheritace_Bike_UnitTests&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.Inheritance.UnitTests.inheritace_Motorcycle_UnitTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.Inheritance.UnitTests.inheritace_Car_UnitTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.Inheritance.UnitTests.InheritanceMotorcycleUnitTests.Motorcycle_CheckAccelerateMethod&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.Inheritance.UnitTests.InheritanceMotorcycleUnitTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.Inheritance.UnitTests.InheritanceVehicleUnitTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.Inheritance.UnitTests.InheritaceTruckUnitTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::95BA340B-F307-9FFB-6DFF-678E78DA93F6::net10.0::Cs.Advanced.UnitTests.Inheritance.UnitTests.InheritanceCarUnitTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	

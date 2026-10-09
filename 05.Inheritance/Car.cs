@@ -33,22 +33,23 @@ public class Car(
 
     public void Board()
     {
-        Occupants++;
+        if (Occupants < SeatCount)
+        {
+            Occupants++;
+        }
     }
 
     public void Exit()
     {
-        Occupants--;
-        
-        if (Occupants < 0)
+        if (Occupants > 0)
         {
-            Occupants = 0;
+            Occupants--;
         }
     }
 
     public override string GetTypeName()
     {
-        return "PKW";
+        return nameof(Car);
     }
 
     public override string ToString()
